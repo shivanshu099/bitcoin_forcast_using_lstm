@@ -1,5 +1,5 @@
 
-api_key="bg_c3b222b10c3a86cc689025f268a0c394"
-api_secret_key="9cbc14b7db1738adeee9e1a0947e481051251714cf5a55bf58afe021d21a3b8a"
-password="FishOutOfWater"
+api_key="you_api_key"
+api_secret_key="your_api_secret_key"
+password="your_password"
 
