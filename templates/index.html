@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bitcoin Price Forecasting</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Bitcoin price forecasting</h1>
+        <div class="description">
+            <p>this is a simple web application that forecasts the price of bitcoin using machine learning.</p>
+        </div>
+        <p class="price_live"></p>
+        {% if imgt %}
+        <img src="data:image/png;base64,{{ imgt }}" alt="Bitcoin Price Prediction" class="bitcoin-image">
+        {% else %}
+        <img src="{{ url_for('static', filename='bitcoin.jpeg') }}" alt="Bitcoin" class="bitcoin-image">
+        {% endif %}
+        <form method="POST">
+            <input type="text" name="input_data" placeholder="Enter number of days to forecast">
+            <button type="submit">Predict</button>
+        </form>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
